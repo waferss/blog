@@ -24,7 +24,9 @@
 
 ## sidebar 结构
 
-先直接上代码再说别的
+首先，需要先按照官方文档多个侧边栏，将页面文件组织成符合规定的目录结构。直接贴官方文档链接：[Vuepress sidebar 多个侧边栏](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%A4%9A%E4%B8%AA%E4%BE%A7%E8%BE%B9%E6%A0%8F)
+
+接下来直接上代码
 
 ```js
 // 配置文件路径: /docs/.vuepress/config.js

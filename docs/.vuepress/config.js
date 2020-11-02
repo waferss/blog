@@ -55,24 +55,24 @@ module.exports = {
         },
         {
           title: 'Vuepress 相关问题',
-          path: '/essay/VuepressAbout/',
+          path: '/essay/vuepress-about/',
           children: [
             {
               title: 'Vuepress 侧边栏 sidebar',
-              path: '/essay/VuepressAbout/SidebarProblems',
+              path: '/essay/vuepress-about/sidebar-problems',
             },
           ],
         },
       ],
       '/html/': [
         {
-          title: 'HTML',
+          title: 'About',
           path: '/html/',
         },
       ],
       '/css/': [
         {
-          title: 'CSS',
+          title: 'About',
           path: '/css/',
         },
       ],
@@ -83,19 +83,19 @@ module.exports = {
         },
         {
           title: 'JS 高级程序设计（第三版）',
-          path: '/js/JSAdvancedProgramming3',
+          path: '/js/pro-js-for-web-dev-3rd/',
           children: [],
         },
       ],
       '/vue/': [
         {
-          title: 'Vue',
+          title: 'About',
           path: '/vue/',
         },
       ],
       '/react/': [
         {
-          title: 'React',
+          title: 'About',
           path: '/react/',
         },
       ],
