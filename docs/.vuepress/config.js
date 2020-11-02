@@ -99,6 +99,12 @@ module.exports = {
           path: '/react/',
         },
       ],
+      '/other/': [
+        {
+          title: 'About',
+          path: '/other/',
+        },
+      ],
     },
     smoothScroll: true, // 页面滚动
     sidebarDepth: 2, // 侧边栏显示 2 级
