@@ -14,7 +14,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@assets': '/docs/assets',
+        '@assets': '/assets',
       },
     },
   },
@@ -23,13 +23,16 @@ module.exports = {
     logo: '/CAF.png',
     nav: [
       { text: '首页', link: '/', ariaLabel: '首页' },
-      { text: '文章', link: '/guide/', ariaLabel: '文章' },
+      { text: '随笔', link: '/essay/', ariaLabel: '随笔' },
+      { text: 'html', link: '/html/', ariaLabel: 'html' },
+      { text: 'css', link: '/css/', ariaLabel: 'css' },
+      { text: 'js', link: '/js/', ariaLabel: 'js' },
       {
-        text: '了解更多',
-        ariaLabel: '了解更多',
+        text: '框架',
+        ariaLabel: '框架',
         items: [
-          { text: 'jiandyu', link: '/' },
-          { text: 'more', link: '/' },
+          { text: 'vue', link: '/vue/' },
+          { text: 'react', link: '/react/' },
         ],
       },
       {
@@ -40,7 +43,7 @@ module.exports = {
     ],
   },
   sidebar: 'auto', // 侧边栏配置
-  sidebarDepth: 2, // 侧边栏显示2级
+  sidebarDepth: 2, // 侧边栏显示 2 级
   lastUpdated: 'Last Updated', // 最后更新时间
   smoothScroll: true, // 页面滚动
 };
