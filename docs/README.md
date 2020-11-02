@@ -1,5 +1,6 @@
 ---
 home: true
+lang: "zh-CN"
 heroImage: /index.png
 heroText: 学习记录博客
 tagline: '@chickenAndFish'

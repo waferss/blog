@@ -2,6 +2,7 @@
 
 module.exports = {
   base: '/',
+  lang: 'zh-CN',
   title: 'Blog of chickenAndFish',
   description: "It's just a blog",
   keys: '个人博客',
@@ -22,11 +23,11 @@ module.exports = {
   themeConfig: {
     logo: '/CAF.png',
     nav: [
-      { text: '首页', link: '/', ariaLabel: '首页' },
-      { text: '随笔', link: '/essay/', ariaLabel: '随笔' },
-      { text: 'html', link: '/html/', ariaLabel: 'html' },
-      { text: 'css', link: '/css/', ariaLabel: 'css' },
-      { text: 'js', link: '/js/', ariaLabel: 'js' },
+      { text: '首页', ariaLabel: '首页', link: '/' },
+      { text: '随笔', ariaLabel: '随笔', link: '/essay/' },
+      { text: 'html', ariaLabel: 'html', link: '/html/' },
+      { text: 'css', ariaLabel: 'css', link: '/css/' },
+      { text: 'js', ariaLabel: 'js', link: '/js/' },
       {
         text: '框架',
         ariaLabel: '框架',
@@ -34,6 +35,11 @@ module.exports = {
           { text: 'vue', link: '/vue/' },
           { text: 'react', link: '/react/' },
         ],
+      },
+      {
+        text: '其它',
+        ariaLabel: '其它',
+        link: '/other/',
       },
       {
         text: 'Github',
@@ -46,4 +52,15 @@ module.exports = {
   sidebarDepth: 2, // 侧边栏显示 2 级
   lastUpdated: 'Last Updated', // 最后更新时间
   smoothScroll: true, // 页面滚动
+  // 插件
+  plugins: [
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+      '@vuepress/blog',
+    ],
+  ],
 };

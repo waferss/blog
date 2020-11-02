@@ -7,6 +7,9 @@
   "author": "chickenAndFish",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.3",
+    "@vuepress/plugin-google-analytics": "^1.7.1",
+    "@vuepress/plugin-pwa": "^1.7.1",
     "vuepress": "^1.7.1"
   },
   "scripts": {
