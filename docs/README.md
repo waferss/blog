@@ -4,7 +4,7 @@ home: true
 heroText: 学习记录博客
 tagline: '@chickenAndFish'
 actionText: 查看文章 →
-actionLink: /guide/
+actionLink: /essay/
 features:
   - title: 仅用于学习记录
     details: 专门记录一些学习上常用、易忘的知识点，便于自己查找与巩固记忆。
