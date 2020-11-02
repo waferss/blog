@@ -3,13 +3,13 @@
 module.exports = {
   base: '/',
   lang: 'zh-CN',
-  title: 'Blog of chickenAndFish',
+  title: 'Blog of the chickenAndFish',
   description: "It's just a blog",
   keys: '个人博客',
-  repo: 'https://github.com/chickenAndFish/blog.git',
+  // repo: 'https://github.com/chickenAndFish/blog.git',
   head: [['link', { rel: 'shortcut icon', href: '/favicon.ico' }]],
   markdown: {
-    lineNumbers: true, // 代码块是否加行号
+    lineNumbers: false, // 代码块是否加行号
   },
   // webpack路径别名配置
   configureWebpack: {
@@ -25,15 +25,15 @@ module.exports = {
     nav: [
       { text: '首页', ariaLabel: '首页', link: '/' },
       { text: '随笔', ariaLabel: '随笔', link: '/essay/' },
-      { text: 'html', ariaLabel: 'html', link: '/html/' },
-      { text: 'css', ariaLabel: 'css', link: '/css/' },
-      { text: 'js', ariaLabel: 'js', link: '/js/' },
+      { text: 'HTML', ariaLabel: 'HTML', link: '/html/' },
+      { text: 'CSS', ariaLabel: 'CSS', link: '/css/' },
+      { text: 'JS', ariaLabel: 'JS', link: '/js/' },
       {
         text: '框架',
         ariaLabel: '框架',
         items: [
-          { text: 'vue', link: '/vue/' },
-          { text: 'react', link: '/react/' },
+          { text: 'Vue', link: '/vue/' },
+          { text: 'React', link: '/react/' },
         ],
       },
       {
@@ -47,23 +47,67 @@ module.exports = {
         link: 'https://github.com/chickenAndFish',
       },
     ],
+    sidebar: {
+      '/essay/': [
+        {
+          title: '随笔',
+          path: '/essay/',
+        },
+        {
+          title: 'Vuepress 相关问题',
+          path: '/essay/VuepressAbout/',
+          children: [
+            {
+              title: 'Vuepress 侧边栏 sidebar',
+              path: '/essay/VuepressAbout/SidebarProblems',
+            },
+          ],
+        },
+      ],
+      '/html/': [
+        {
+          title: 'HTML',
+          path: '/html/',
+        },
+      ],
+      '/css/': [
+        {
+          title: 'CSS',
+          path: '/css/',
+        },
+      ],
+      '/js/': [
+        {
+          title: 'About',
+          path: '/js/',
+        },
+        {
+          title: 'JS 高级程序设计（第三版）',
+          path: '/js/JSAdvancedProgramming3',
+          children: [],
+        },
+      ],
+      '/vue/': [
+        {
+          title: 'Vue',
+          path: '/vue/',
+        },
+      ],
+      '/react/': [
+        {
+          title: 'React',
+          path: '/react/',
+        },
+      ],
+    },
+    smoothScroll: true, // 页面滚动
+    sidebarDepth: 2, // 侧边栏显示 2 级
+    collapsable: true, // 使侧边栏不为展开状态
+    lastUpdated: 'Last Updated', // 最后更新时间
+    // 上/下一篇
+    prevLinks: true,
+    nextLinks: true,
   },
-  // 侧边栏配置
-  sidebar: 'auto',
-  sidebar: {
-    '/essay/': [''],
-    '/html/': [''],
-    '/css/': [''],
-    '/js/': ['', 'JSAdvancedProgramming3'],
-    '/vue/': [''],
-    '/react/': [''],
-    '/other/': [''],
-    // fallback
-    '/': ['', 'contact', 'about'],
-  },
-  sidebarDepth: 2, // 侧边栏显示 2 级
-  lastUpdated: 'Last Updated', // 最后更新时间
-  smoothScroll: true, // 页面滚动
   // 插件
   plugins: [
     [
