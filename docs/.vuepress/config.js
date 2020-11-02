@@ -1,7 +1,7 @@
 /** @format */
 
 module.exports = {
-  base: '/blog/',
+  base: '/',
   title: 'Blog of chickenAndFish',
   description: "It's just a blog",
   keys: '个人博客',
