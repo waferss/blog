@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /assets/hero.png
+heroImage: /CAF.png
 heroText: 学习记录博客
 tagline: '@chickenAndFish'
 actionText: 查看文章 →
@@ -16,4 +16,5 @@ footer: 0.x | Copyright © 2020-present @chickenAndFish
 <!-- @format -->
 
 # Hello World !
+
 # 你好，世界！
