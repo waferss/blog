@@ -1,0 +1,5 @@
+<!-- @format -->
+
+# blog
+
+blog resource
