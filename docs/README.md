@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /CAF.png
+heroImage: /index.png
 heroText: 学习记录博客
 tagline: '@chickenAndFish'
 actionText: 查看文章 →
