@@ -48,7 +48,19 @@ module.exports = {
       },
     ],
   },
-  sidebar: 'auto', // 侧边栏配置
+  // 侧边栏配置
+  sidebar: 'auto',
+  sidebar: {
+    '/essay/': [''],
+    '/html/': [''],
+    '/css/': [''],
+    '/js/': ['', 'JSAdvancedProgramming3'],
+    '/vue/': [''],
+    '/react/': [''],
+    '/other/': [''],
+    // fallback
+    '/': ['', 'contact', 'about'],
+  },
   sidebarDepth: 2, // 侧边栏显示 2 级
   lastUpdated: 'Last Updated', // 最后更新时间
   smoothScroll: true, // 页面滚动
