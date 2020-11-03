@@ -4,7 +4,7 @@ lang: 'zh-CN'
 heroImage: /index.png
 heroText: 知识记录仓库
 tagline: '求知若饥，虚心若愚'
-actionText: 查看文章 →
+actionText: 查看随笔 →
 actionLink: /essay/
 features:
   - title: 用于记录学习知识

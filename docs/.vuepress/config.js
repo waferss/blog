@@ -9,19 +9,20 @@ module.exports = {
   // repo: 'https://github.com/chickenAndFish/blog.git',
   head: [['link', { rel: 'shortcut icon', href: '/favicon.ico' }]],
   markdown: {
-    lineNumbers: false, // 代码块是否加行号
+    lineNumbers: true, // 代码块是否加行号
   },
   // webpack路径别名配置
   configureWebpack: {
     resolve: {
       alias: {
-        '@assets': '/assets',
+        '@static': '/static',
       },
     },
   },
   // 主题配置
   themeConfig: {
     logo: '/CAF.png',
+    // 导航栏
     nav: [
       { text: '首页', ariaLabel: '首页', link: '/' },
       { text: '随笔', ariaLabel: '随笔', link: '/essay/' },
@@ -32,8 +33,8 @@ module.exports = {
         text: '框架',
         ariaLabel: '框架',
         items: [
-          { text: 'Vue', link: '/vue/' },
-          { text: 'React', link: '/react/' },
+          { text: 'Vue', ariaLabel: 'Vue', link: '/vue/' },
+          { text: 'React', ariaLabel: 'React', link: '/react/' },
         ],
       },
       {
@@ -47,21 +48,12 @@ module.exports = {
         link: 'https://github.com/chickenAndFish',
       },
     ],
+    // 侧边栏
     sidebar: {
       '/essay/': [
         {
           title: '随笔',
           path: '/essay/',
-        },
-        {
-          title: 'Vuepress 相关问题',
-          path: '/essay/vuepress-about/',
-          children: [
-            {
-              title: 'Vuepress 侧边栏 sidebar',
-              path: '/essay/vuepress-about/sidebar-problems',
-            },
-          ],
         },
       ],
       '/html/': [
@@ -103,6 +95,24 @@ module.exports = {
         {
           title: 'About',
           path: '/other/',
+        },
+        {
+          title: 'Vuepress 相关问题',
+          path: '/other/vuepress-about/',
+          children: [
+            {
+              title: 'Vuepress 侧边栏 sidebar',
+              path: '/other/vuepress-about/sidebar-problems',
+            },
+          ],
+        },
+        {
+          title: 'About',
+          path: '/other/about',
+        },
+        {
+          title: 'Contact',
+          path: '/other/contact',
         },
       ],
     },

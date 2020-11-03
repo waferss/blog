@@ -2,7 +2,9 @@
 
 # Vuepress 侧边栏 sidebar
 
-> Vuepress sidebar 配置上有不少问题，官方文档写得很好，但把各种配置分开写了，自己所需要的效果必须要几样结合起来才能配置成功，故作记录。
+::: tip 
+Vuepress 侧边栏 **sidebar** 配置上有不少问题，官方文档写得很好，但把各种配置分开写了，自己所需要的效果必须要几样结合起来才能配置成功，故作记录。
+:::
 
 ## 官方文档已有部分
 
@@ -20,18 +22,22 @@
 
 但将这两个结合起来就能实现我的需求，我叫它分组式多侧边栏。:v:
 
-<s> (其实就是 Vuepress 官方文档的那种效果 :sweat_smile:) </s>
+<s> (其实和 Vuepress 官方文档的效果差不多 :sweat_smile:) </s>
 
 ## sidebar 结构
 
-首先，需要先按照官方文档多个侧边栏，将页面文件组织成符合规定的目录结构。直接贴官方文档链接：[Vuepress sidebar 多个侧边栏](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%A4%9A%E4%B8%AA%E4%BE%A7%E8%BE%B9%E6%A0%8F)
+首先，需要先按照官方文档多个侧边栏，将页面文件组织成符合规定的目录结构。
+
+直接贴上官方文档链接：[Vuepress sidebar 多个侧边栏](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%A4%9A%E4%B8%AA%E4%BE%A7%E8%BE%B9%E6%A0%8F)
 
 接下来直接上代码
+
+---
 
 ```js
 // 配置文件路径: /docs/.vuepress/config.js
 
-// 注: 路径都为绝对路径，文件打包后 docs 文件夹对应为 dist 文件夹
+// 注: 路径都为绝对路径，文件打包后 docs 文件夹大致对应为 dist 文件夹
 
 sidebar: {
 
@@ -88,7 +94,9 @@ sidebar: {
 
 ---
 
-再加点我喜欢的佐料
+## 再来点我喜欢的辅料
+
+::: details
 
 ```js
 sidebar{
@@ -103,3 +111,5 @@ sidebar{
   nextLinks: true,
 }
 ```
+
+:::
