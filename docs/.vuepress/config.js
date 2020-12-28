@@ -1,17 +1,16 @@
-/** @format */
-
 module.exports = {
   base: '/',
   lang: 'zh-CN',
   title: 'Blog of the chickenAndFish',
   description: "It's just a blog",
-  keys: '个人博客',
-  // repo: 'https://github.com/chickenAndFish/blog.git',
+  keys: '个人博客', // repo: 'https://github.com/chickenAndFish/blog.git',
   head: [['link', { rel: 'shortcut icon', href: '/favicon.ico' }]],
   markdown: {
     lineNumbers: true, // 代码块是否加行号
   },
-  // webpack路径别名配置
+  /**
+   * webpack路径别名配置
+   */
   configureWebpack: {
     resolve: {
       alias: {
@@ -19,7 +18,9 @@ module.exports = {
       },
     },
   },
-  // 主题配置
+  /**
+   * 主题配置
+   */
   themeConfig: {
     logo: '/CAF.png',
     // 导航栏
@@ -33,8 +34,9 @@ module.exports = {
         text: '框架',
         ariaLabel: '框架',
         items: [
-          { text: 'Vue', ariaLabel: 'Vue', link: '/vue/' },
-          { text: 'React', ariaLabel: 'React', link: '/react/' },
+          { text: 'Vue', ariaLabel: 'Vue', link: '/frames/vue/' },
+          { text: 'React', ariaLabel: 'React', link: '/frames/react/' },
+          { text: 'Angular', ariaLabel: 'Angular', link: '/frames/angular/' },
         ],
       },
       {
@@ -48,7 +50,9 @@ module.exports = {
         link: 'https://github.com/chickenAndFish',
       },
     ],
-    // 侧边栏
+    /**
+     * 侧边栏
+     */
     sidebar: {
       '/essay/': [
         {
@@ -79,16 +83,22 @@ module.exports = {
           children: [],
         },
       ],
-      '/vue/': [
+      '/frames/vue/': [
         {
           title: 'About',
-          path: '/vue/',
+          path: '/frames/vue/',
         },
       ],
-      '/react/': [
+      '/frames/react/': [
         {
           title: 'About',
-          path: '/react/',
+          path: '/frames/react/',
+        },
+      ],
+      '/frames/angular/': [
+        {
+          title: 'About',
+          path: '/frames/angular/',
         },
       ],
       '/other/': [
@@ -124,7 +134,9 @@ module.exports = {
     prevLinks: true,
     nextLinks: true,
   },
-  // 插件
+  /**
+   * 插件
+   */
   plugins: [
     [
       '@vuepress/pwa',

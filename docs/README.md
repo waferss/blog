@@ -10,12 +10,9 @@ features:
   - title: 用于记录学习知识
     details: 记录一些学习上常用、易忘的知识点，便于自己查找与巩固记忆。
   - title: 由 Vuepress 驱动
-    details: 既可以自主配置所需功能，也可以学习 Vue 知识，后续也会基于此制作适合自己的主题。
-  - title: 干就完事
+    details: 可以自由配置所需功能，也可以学习 Vue 知识。
 footer: 0.x | Copyright © 2020-present @chickenAndFish
 ---
-
-<!-- @format -->
 
 # Hello World !
 
