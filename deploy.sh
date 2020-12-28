@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误
-set -e
+# set -e
 
 # 备份源文件
 git remote rm
@@ -11,13 +11,11 @@ git add -A
 git commit -m 'commit'
 git push -f https://github.com/chickenAndFish/blog.git main
 
-cd -
-
 # dist
 # 生成静态文件
 git remote rm
 yarn docs:build
-cd docs/.vuepress/dist
+# cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
