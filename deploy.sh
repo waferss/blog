@@ -15,7 +15,7 @@ git push -f https://github.com/chickenAndFish/blog.git main
 # 生成静态文件
 git remote rm
 yarn docs:build
-# cd docs/.vuepress/dist
+cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
