@@ -12,8 +12,8 @@ git commit -m 'commit'
 git push -f https://github.com/chickenAndFish/blog.git main
 
 # dist
-# 生成静态文件
 git remote rm
+# 生成静态文件
 yarn docs:build
 cd docs/.vuepress/dist
 

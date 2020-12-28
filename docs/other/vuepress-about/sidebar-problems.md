@@ -98,7 +98,7 @@ sidebar: {
 
 ```js
 sidebar{
-  // ...
+  /* ... */
 
   smoothScroll: true, // 页面滚动
   collapsable: true, // 使侧边栏不为展开状态
