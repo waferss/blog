@@ -9,7 +9,7 @@ git remote rm
 git init
 git add -A
 git commit -m 'commit'
-git push -f https://github.com/chickenAndFish/blog.git main
+git push -f https://github.com/waferss/blog.git main
 
 # dist
 git remote rm
@@ -25,9 +25,9 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f https://github.com/chickenAndFish/chickenAndFish.github.io.git master
+git push -f https://github.com/waferss.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:chickenAndFish/blog.git master:gh-pages
+# git push -f git@github.com:waferss/blog.git master:gh-pages
 
 cd -

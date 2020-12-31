@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # blog
 
 blog resource
