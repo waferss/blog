@@ -14,7 +14,7 @@ git push -f https://github.com/waferss/blog.git main
 # dist
 git remote rm
 # 生成静态文件
-yarn docs:build
+npm run docs:build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
@@ -25,7 +25,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f https://github.com/waferss/waferss.github.io.git.git master
+git push -f https://github.com/waferss/waferss.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:waferss/blog.git master:gh-pages

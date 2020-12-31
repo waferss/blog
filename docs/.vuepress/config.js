@@ -3,7 +3,7 @@ module.exports = {
   lang: 'zh-CN',
   title: 'Blog of the waferss
   description: "It's just a blog",
-  keys: '个人博客', // repo: 'https://github.com/waferss/blog.git',
+  keys: '个人博客', // repo: 'https://github.com/waferss/blog',
   markdown: {
     lineNumbers: true,
   },
